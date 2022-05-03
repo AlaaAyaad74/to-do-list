@@ -1,0 +1,164 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 1.1rem;
+
+  font-family: "Kalam", cursive;
+  min-width: 280px;
+}
+
+.noTasks {
+  color: green;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-shadow: 2px 4px #ddd;
+}
+
+h1 {
+  color: green;
+}
+h2 {
+  max-width: 60%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+ul {
+  list-style: none;
+}
+input {
+  padding: 0.2em 0.5em;
+  outline: none;
+  border: 2px solid green;
+  font-size: 1.5rem;
+  /* border-radius: 3px; */
+  font-family: "Kalam", cursive;
+}
+#Item--field {
+  border-inline-end: none;
+  border-start-start-radius: 3px;
+  border-end-start-radius: 3px;
+  width: 80%;
+  color: gray;
+}
+.completed {
+  background-color: rgba(0, 255, 0, 0.4);
+}
+.status {
+  color: white;
+  transform: scale(1.2);
+  transition: transform 1s;
+}
+.icons {
+  order: 3;
+}
+.hide {
+  display: none;
+}
+input[type="button"] {
+  width: 20%;
+  border-start-end-radius: 3px;
+  border-end-end-radius: 3px;
+  color: white;
+  background-color: green;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  font-weight: 700;
+}
+input[type="button"]:hover {
+  background-color: white;
+  color: green;
+}
+.container {
+  width: 70%;
+  margin: auto;
+  padding: 2em;
+  text-align: center;
+}
+.container .dis--row {
+  display: flex;
+  justify-content: center;
+  padding: 0.5em 0 2em 0;
+  align-items: center;
+  width: 96%;
+  margin: auto;
+}
+.container .items .space--bet {
+  justify-content: space-between;
+  padding: 1em 2em;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  color: green;
+  border: 2px solid green;
+  border-radius: 0.8rem;
+  margin: 2em auto;
+}
+
+.container .items .dis--row .icons i {
+  padding: 0 0.3em;
+}
+.Done {
+  color: green;
+}
+.Notes {
+  color: cadetblue;
+}
+.delete {
+  color: red;
+}
+i:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+  #Item--field {
+    width: 75%;
+  }
+  input[type="button"] {
+    width: 25%;
+  }
+}
+@media (max-width: 680px) {
+  .container {
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
+  }
+  .container .main--dis--column {
+    width: 100%;
+  }
+}
+@media (max-width: 540px) {
+  body {
+    font-size: 1rem;
+  }
+  .container .main--dis--column #space--bet {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  h2 {
+    font-size: 1rem;
+  }
+  body,
+  input {
+    font-size: 1rem;
+  }
+  .container .items .space--bet {
+    padding: 0.5em 1em;
+  }
+
+  #Item--field {
+    width: 70%;
+  }
+  input[type="button"] {
+    width: 30%;
+  }
+}
